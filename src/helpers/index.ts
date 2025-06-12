@@ -1,7 +1,7 @@
 import { productData } from "@/constants/data";
 
 export const getProducts = async () => {
-  const res = await fetch("/api/products");
+  const res = await fetch("https://ecommerce-1-lime.vercel.app/api/products");
   if (!res.ok) {
     throw new Error("Faild to fetch products");
   }
