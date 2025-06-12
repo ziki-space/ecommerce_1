@@ -2,7 +2,7 @@ export interface Products_ {
   _id: number;
   title: string;
   isNew: boolean;
-  oldPrice: number;
+  oldPrice: string;
   price: number;
   description: string;
   category: string;

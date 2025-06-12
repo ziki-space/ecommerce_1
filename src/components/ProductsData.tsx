@@ -45,7 +45,7 @@ const ProductsData = ({ item }: ItemProps) => {
             </div>
             <div className="flex items-center gap-x-2">
               <p className="text-slate-500 line-through text-sm">
-                <FormattedPrice amount={item?.oldPrice} />
+                <FormattedPrice amount={parseFloat(item.oldPrice)} />
               </p>
               <p className="font-semibold">
                 <FormattedPrice amount={item?.price} />
